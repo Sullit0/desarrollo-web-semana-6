@@ -1,19 +1,19 @@
-# Tareas — SwodLore
+# Tareas — Alessandro Poves
 
-**Rama:** `SwodLore`
+**Rama:** `alessandro-poves`
 **Parte asignada:** 1b + 1c — TextArea y atajos de teclado
 **Puntos:** 6 (3 + 3)
 
 ## ⚠️ Antes de empezar
 
-Espera a que **Sullit0** termine y pushee el esqueleto base a `main`. Luego en tu rama:
+Espera a que **Anyelo** termine y pushee el esqueleto base a `main`. Luego en tu rama:
 
 ```bash
-git checkout SwodLore
+git checkout alessandro-poves
 git pull origin main   # traer el esqueleto base
 ```
 
-Trabajas sobre el TextArea y la ruleta que Sullit0 ya creó.
+Trabajas sobre el TextArea y la ruleta que Anyelo ya creó.
 
 ## Tu funcionalidad (Parte 1b — 3 puntos)
 
@@ -49,5 +49,5 @@ Trabajas sobre el TextArea y la ruleta que Sullit0 ya creó.
 
 - Solo HTML + CSS + JavaScript puro (sin librerías).
 - Funciones y variables con **nombres descriptivos en español**.
-- Comunícate con Sullit0 si necesitas exponer alguna función o variable global desde la ruleta.
-- Push frecuente: `git push origin SwodLore`.
+- Comunícate con Anyelo si necesitas exponer alguna función o variable global desde la ruleta.
+- Push frecuente: `git push origin alessandro-poves`.
