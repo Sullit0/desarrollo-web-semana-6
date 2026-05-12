@@ -1,0 +1,312 @@
+/* ============================================================
+   Reset y tipografía base
+   ============================================================ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #f4f5f7;
+    color: #333;
+    padding: 20px;
+    line-height: 1.4;
+}
+
+.seccion {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* ============================================================
+   SECCION 1: RULETA
+   ============================================================ */
+.cabeceraRuleta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 8px 14px;
+    margin-bottom: 16px;
+}
+
+.respuestaRuleta {
+    flex: 1;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #555;
+}
+
+.botonesRuleta {
+    display: flex;
+    gap: 8px;
+}
+
+.botonPrimario {
+    background: #2c7be5;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.botonPrimario:hover { background: #1e63c8; }
+
+.botonSecundario {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.botonSecundario:hover { background: #c0392b; }
+
+.botonChico {
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.contenedorRuleta {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.zonaCanvas {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+
+#canvasRuleta {
+    cursor: pointer;
+    max-width: 100%;
+    height: auto;
+}
+
+.panelLateralRuleta {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contenedorTexto {
+    position: relative;
+}
+
+.textareaElementos {
+    display: none;
+    width: 100%;
+    height: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 1.4;
+    resize: vertical;
+}
+
+.vistaElementos {
+    width: 100%;
+    height: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 1.4;
+    overflow-y: auto;
+    cursor: pointer;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.vistaElementos:hover {
+    border-color: #999;
+}
+
+.elemento-oculto {
+    color: #aaa;
+    text-decoration: line-through;
+}
+
+.botonesTextarea {
+    display: flex;
+    gap: 6px;
+    justify-content: space-between;
+}
+
+.listaAtajos {
+    list-style: none;
+    font-size: 13px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.listaAtajos li {
+    padding: 3px 0;
+}
+
+kbd {
+    background: #f0f0f0;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 1px 6px;
+    font-family: monospace;
+    font-size: 12px;
+    margin-right: 6px;
+}
+
+/* ============================================================
+   SECCION 2: SORTEO DE EQUIPOS
+   ============================================================ */
+.introSorteo {
+    margin-bottom: 14px;
+    color: #555;
+}
+
+.tarjetaSorteo {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.pantallaSorteo {
+    display: flex;
+    gap: 30px;
+}
+
+.pantallaSorteo.oculto {
+    display: none;
+}
+
+.columnaIzquierdaSorteo,
+.columnaDerechaSorteo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.labelSorteo {
+    font-weight: 600;
+    margin-top: 6px;
+}
+
+.contenedorTextareaParticipantes {
+    position: relative;
+}
+
+.textareaParticipantes {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    resize: vertical;
+}
+
+.contadorParticipantes {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #fce4ec;
+    color: #c2185b;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.ayudaSorteo {
+    font-size: 12px;
+    color: #888;
+}
+
+.opcionesDivision {
+    display: flex;
+    gap: 16px;
+    font-size: 14px;
+}
+
+.selectSorteo,
+.inputSorteo {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.botonesFinalesSorteo {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+/* Resultado de equipos */
+.tituloResultadoSorteo {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c7be5;
+}
+
+.contenedorEquipos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.equipoCard {
+    border: 2px solid #2c7be5;
+    border-radius: 8px;
+    padding: 14px;
+    background: #fff;
+}
+
+.equipoTitulo {
+    font-weight: 700;
+    color: #2c7be5;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 4px;
+}
+
+.equipoIntegrante {
+    padding: 4px 0;
+    font-size: 14px;
+}
+
+.botonesExportar {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}

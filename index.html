@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula Virtual — Ruleta y Sorteo de Equipos</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <!-- ============================================================ -->
+    <!-- SECCION 1: RULETA (Anyelo + Alessandro) -->
+    <!-- ============================================================ -->
+    <section id="seccionRuleta" class="seccion">
+        <header class="cabeceraRuleta">
+            <div id="respuestaRuleta" class="respuestaRuleta">RESPUESTA</div>
+            <div class="botonesRuleta">
+                <button id="botonIniciar" class="botonPrimario">Iniciar</button>
+                <button id="botonReiniciar" class="botonSecundario">Reiniciar</button>
+            </div>
+        </header>
+
+        <div class="contenedorRuleta">
+            <div class="zonaCanvas">
+                <canvas id="canvasRuleta" width="500" height="500"></canvas>
+            </div>
+
+            <aside class="panelLateralRuleta">
+                <div class="contenedorTexto">
+                    <textarea id="textareaElementos"
+                              class="textareaElementos"
+                              placeholder="Un elemento por línea&#10;1&#10;2&#10;3"
+                              readonly>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12</textarea>
+                    <div id="vistaElementos" class="vistaElementos"></div>
+                </div>
+
+                <div class="botonesTextarea">
+                    <button id="botonTitulo" class="botonChico">Título</button>
+                    <button id="botonEditar" class="botonChico">Editar</button>
+                    <button id="botonEsconder" class="botonChico">esconder...</button>
+                </div>
+
+                <ul class="listaAtajos">
+                    <li><kbd>SPACE</kbd> Gíralo</li>
+                    <li><kbd>S</kbd> Ocultar el elemento seleccionado</li>
+                    <li><kbd>R</kbd> Reiniciar</li>
+                    <li><kbd>E</kbd> Editar</li>
+                    <li><kbd>F</kbd> Pantalla completa</li>
+                </ul>
+            </aside>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECCION 2: SORTEO DE EQUIPOS (Angel + Cristhian) -->
+    <!-- ============================================================ -->
+    <section id="seccionSorteo" class="seccion">
+        <p class="introSorteo">Crea <strong>equipos al azar</strong> a partir de una lista de nombres de forma automática y gratuita.</p>
+
+        <div class="tarjetaSorteo">
+            <!-- Pantalla 1: configuración -->
+            <div id="pantallaConfigSorteo" class="pantallaSorteo">
+                <div class="columnaIzquierdaSorteo">
+                    <label class="labelSorteo">1. Ingresa los participantes</label>
+                    <div class="contenedorTextareaParticipantes">
+                        <textarea id="textareaParticipantes"
+                                  class="textareaParticipantes"
+                                  placeholder="Cada participante debe estar en una nueva línea"
+                                  maxlength="5100"></textarea>
+                        <span id="contadorParticipantes" class="contadorParticipantes">0</span>
+                    </div>
+                    <p class="ayudaSorteo">Agrega un * para indicar líderes de grupo. ✦ Líder</p>
+                </div>
+
+                <div class="columnaDerechaSorteo">
+                    <label class="labelSorteo">2. Cómo dividir:</label>
+                    <div class="opcionesDivision">
+                        <label><input type="radio" name="modoSorteo" value="cantidadEquipos" checked /> Cantidad de equipos</label>
+                        <label><input type="radio" name="modoSorteo" value="participantesPorEquipo" /> Participantes por equipo</label>
+                    </div>
+                    <select id="selectNumeroSorteo" class="selectSorteo">
+                        <option value="2">2 equipos ✓</option>
+                    </select>
+
+                    <label class="labelSorteo">3. Título</label>
+                    <input id="inputTituloSorteo" type="text" class="inputSorteo" placeholder="Copa del Mundo Qatar 2022" />
+
+                    <div class="botonesFinalesSorteo">
+                        <button id="botonLimpiarSorteo" class="botonSecundario">Limpiar</button>
+                        <button id="botonGenerarSorteo" class="botonPrimario">Generar equipos</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pantalla 2: resultados (oculta hasta generar) -->
+            <div id="pantallaResultadoSorteo" class="pantallaSorteo oculto">
+                <h2 id="tituloResultadoSorteo" class="tituloResultadoSorteo"></h2>
+                <div id="contenedorEquipos" class="contenedorEquipos"></div>
+                <div class="botonesExportar">
+                    <button id="botonDescargarJpg" class="botonSecundario">Descargar JPG</button>
+                    <button id="botonCopiarPortapapeles" class="botonSecundario">Copiar al portapapeles</button>
+                    <button id="botonCopiarColumnas" class="botonSecundario">Copiar por columnas</button>
+                    <button id="botonVolverSorteo" class="botonSecundario">← Volver</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts (uno por integrante para evitar conflictos al mergear) -->
+    <script src="js/ruleta.js"></script>
+    <script src="js/atajos.js"></script>
+    <script src="js/sorteo-config.js"></script>
+    <script src="js/sorteo-generar.js"></script>
+</body>
+</html>
