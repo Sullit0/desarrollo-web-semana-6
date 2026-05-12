@@ -1,6 +1,6 @@
-# Tareas — Sullit0 (responsable del equipo)
+# Tareas — Anyelo Sulluchuco (responsable del equipo)
 
-**Rama:** `Sullit0`
+**Rama:** `anyelo-sulluchuco`
 **Parte asignada:** 1a — Ruleta dinámica
 **Puntos:** 4
 
@@ -42,10 +42,10 @@ Una vez que tengas la estructura mínima, hacer `git push origin main` para que 
 
 - Solo HTML + CSS + JavaScript puro (sin librerías).
 - Funciones y variables con **nombres descriptivos en español**.
-- Hacer commits frecuentes y push a tu rama: `git push origin Sullit0`.
+- Hacer commits frecuentes y push a tu rama: `git push origin anyelo-sulluchuco`.
 
 ## Al final (tu responsabilidad como líder)
 
-- Mergear las 4 ramas a `main`: `Sullit0` → `SwodLore` → `GrilloCantorr` → `CristhianRudolf7`.
+- Mergear las 4 ramas a `main`: `anyelo-sulluchuco` → `alessandro-poves` → `angel-huaynate` → `cristhian-egoavil`.
 - Resolver conflictos.
 - Verificar que todo funcione en `main` antes de las **12:45**.
