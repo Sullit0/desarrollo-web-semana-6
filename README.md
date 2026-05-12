@@ -28,3 +28,11 @@ Cada integrante trabaja en su propia rama. **Anyelo Sulluchuco** es el responsab
 
 - Solo HTML, CSS y JavaScript puro (sin librerías externas).
 - Funciones y variables con nombres descriptivos en español.
+
+## Exposición de funciones (Angel Huaynate → Cristhian Egoavil)
+
+Para la generación de equipos, Cristhian utilizará las siguientes funciones globales:
+- `obtenerParticipantes()`: Devuelve un array de strings con los nombres.
+- `obtenerModoSorteo()`: Devuelve `"cantidadEquipos"` o `"participantesPorEquipo"`.
+- `obtenerNumeroSorteo()`: Devuelve el número (entero) seleccionado en el desplegable.
+- `obtenerTituloSorteo()`: Devuelve el string con el título ingresado.
