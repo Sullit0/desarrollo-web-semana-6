@@ -1,20 +1,20 @@
-# Tareas — CristhianRudolf7
+# Tareas — Cristhian Egoavil
 
-**Rama:** `CristhianRudolf7`
+**Rama:** `cristhian-egoavil`
 **Parte asignada:** 2c + 2d — Generación de equipos y exportación
 **Puntos:** 5 (3 + 2)
 
 ## ⚠️ Antes de empezar
 
-Espera a que **Sullit0** pushee el esqueleto base a `main` y, idealmente, a que **GrilloCantorr** tenga lista la sección de entrada. Luego en tu rama:
+Espera a que **Anyelo** pushee el esqueleto base a `main` y, idealmente, a que **Angel** tenga lista la sección de entrada. Luego en tu rama:
 
 ```bash
-git checkout CristhianRudolf7
-git pull origin main             # traer el esqueleto base
-# (opcional) git merge origin/GrilloCantorr   # traer su sección de entrada
+git checkout cristhian-egoavil
+git pull origin main                    # traer el esqueleto base
+# (opcional) git merge origin/angel-huaynate   # traer la sección de entrada de Angel
 ```
 
-Coordina con GrilloCantorr los nombres de las funciones para leer participantes/configuración.
+Coordina con Angel los nombres de las funciones para leer participantes/configuración.
 
 ## Tu funcionalidad (Parte 2c — 3 puntos)
 
@@ -54,4 +54,4 @@ Coordina con GrilloCantorr los nombres de las funciones para leer participantes/
 
 - Solo HTML + CSS + JavaScript puro (sin librerías).
 - Funciones y variables con **nombres descriptivos en español**.
-- Push frecuente: `git push origin CristhianRudolf7`.
+- Push frecuente: `git push origin cristhian-egoavil`.
