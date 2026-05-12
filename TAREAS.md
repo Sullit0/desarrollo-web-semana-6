@@ -1,15 +1,15 @@
-# Tareas — GrilloCantorr
+# Tareas — Angel Huaynate
 
-**Rama:** `GrilloCantorr`
+**Rama:** `angel-huaynate`
 **Parte asignada:** 2a + 2b — Entrada del sorteo de equipos
 **Puntos:** 5 (2 + 3)
 
 ## ⚠️ Antes de empezar
 
-Espera a que **Sullit0** pushee el esqueleto base a `main`. Luego en tu rama:
+Espera a que **Anyelo** pushee el esqueleto base a `main`. Luego en tu rama:
 
 ```bash
-git checkout GrilloCantorr
+git checkout angel-huaynate
 git pull origin main   # traer el esqueleto
 ```
 
@@ -35,9 +35,9 @@ Tu zona de trabajo es la **sección de Sorteo de Equipos** (separada de la rulet
 - [ ] Input de texto para el **título del sorteo** (ej: "Copa del Mundo Qatar 2022")
 - [ ] Botón **Limpiar** que vacíe el TextArea y resetee los controles
 
-## Lo que debes EXPONER para CristhianRudolf7
+## Lo que debes EXPONER para Cristhian Egoavil
 
-Él/ella necesita leer:
+Él necesita leer:
 - La lista de participantes (array de strings)
 - El modo: `"cantidadEquipos"` o `"participantesPorEquipo"`
 - El número elegido en el select
@@ -52,10 +52,10 @@ function obtenerNumeroSorteo() { ... }
 function obtenerTituloSorteo() { ... }
 ```
 
-Coordina con CristhianRudolf7 los nombres exactos.
+Coordina con Cristhian los nombres exactos.
 
 ## Reglas
 
 - Solo HTML + CSS + JavaScript puro (sin librerías).
 - Funciones y variables con **nombres descriptivos en español**.
-- Push frecuente: `git push origin GrilloCantorr`.
+- Push frecuente: `git push origin angel-huaynate`.
